@@ -10,7 +10,7 @@ function getComputerChoice(){
 
 function getUserChoice(){
     let playerInput = prompt(
-        "Pick an element among Rock, Paper, and Scissors: "
+        "Pick an object among Rock, Paper, and Scissors: "
         ).toLowerCase();
     
     if (playerInput == "rock") {
@@ -100,4 +100,4 @@ function game() {
         console.log("It's a tough one, no winner for this round! Try again");
     }
 };
-// game();
+game();
