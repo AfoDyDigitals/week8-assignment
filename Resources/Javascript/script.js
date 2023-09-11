@@ -34,7 +34,7 @@ function gameRule(){
     let computerSelection = getComputerChoice();
 
     if (playerSelection === computerSelection){
-        console.log("It's a tie. Retry your luck!");
+        console.log("It's a tie. Retry!");
         return "tie";
       }  else if (playerSelection === "Rock"){
             if (computerSelection === "Paper"){
@@ -64,4 +64,33 @@ function gameRule(){
         console.log("Please, enter a valid selection among Rock, Paper, and Scissors");
     }
     }
-gameRule();
+// gameRule();
+
+function game() {
+    let round = 0;
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for (let i=1; i<=5; i++){
+        let result = gameRule();
+        if (result === "win"){
+            round ++;
+            playerScore ++;
+            console.log(
+                `Round: ${round}, Player-score ${playerScore} :  ${computerScore} Computer-score`
+                );
+        } else if (result === "lose"){
+            round ++;
+            computerScore ++;
+            console.log(
+                `Round: ${round}, Player-score ${playerScore} :  ${computerScore} Computer-score`
+                );
+        } else {
+         round ++;
+         console.log(
+            `Round: ${round}, Player-score ${playerScore} :  ${computerScore} Computer-score`
+            );
+        }
+    }
+};
+// game();
