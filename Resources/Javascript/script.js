@@ -8,7 +8,7 @@ function getComputerChoice(){
 };
 // getComputerChoice();
 
-function playerSelection(){
+function getUserChoice(){
     let playerInput = prompt(
         "Pick an element among Rock, Paper, and Scissors: "
         ).toLowerCase();
@@ -26,4 +26,4 @@ function playerSelection(){
         console.log("Please select either Rock, Paper, or Scissors");
     }
 };
-playerSelection();
+// getUserChoice();
