@@ -92,5 +92,12 @@ function game() {
             );
         }
     }
+    if (computerScore < playerScore) {
+        console.log("Amazing! You win!!!");
+    } else if (computerScore > playerScore) {
+        console.log ("Oops! You lose! Better luck next time!");
+    } else {
+        console.log("It's a tough one, no winner for this round! Try again");
+    }
 };
 // game();
